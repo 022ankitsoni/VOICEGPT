@@ -8,7 +8,7 @@ import  * as  gTTS from "gtts"
 import { OpenAI } from "langchain/llms/openai";
 
 const openai = new OpenAIApi(new Configuration({ 
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.secrets.OPENAI_API_KEY,
  }));
 
  let tokens = ""
