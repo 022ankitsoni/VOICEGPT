@@ -43,7 +43,7 @@ function record() {
 
   // browser supports getUserMedia
   // change image in button
-  recordButtonImage.src = `/images/${mediaRecorder && mediaRecorder.state === 'recording' ? 'microphone' : 'stop'}.png`;
+  recordButtonImage.src = `../assets/images/${mediaRecorder && mediaRecorder.state === 'recording' ? 'microphone' : 'stop'}.png`;
   if (!mediaRecorder) {
     // start recording
     navigator.mediaDevices.getUserMedia({
