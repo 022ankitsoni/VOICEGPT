@@ -8,7 +8,7 @@
   <title>Speech to Text to Speech</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link href="assets/css/index.css" rel="stylesheet" />
+  <link href="/css/index.css" rel="stylesheet" />
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
@@ -20,7 +20,7 @@
     <h1 class="text-center">Record Your Voice</h1>
     <div class="record-button-container text-center mt-5">
       <button class="bg-transparent border btn record-button rounded-circle shadow-sm text-center" id="recordButton">
-        <img src="assets/images/microphone.png" alt="Record" class="img-fluid" />
+        <img src="/images/microphone.png" alt="Record" class="img-fluid" />
       </button>
     </div>
     <div class="recorded-audio-container mt-5 d-none flex-column justify-content-center align-items-center" 
@@ -39,7 +39,7 @@
     <div id="chatGPT" class="center"></div>  
   </div>
 
-  <script src="assets/js/record.js"></script>
+  <script src="/js/record.js"></script>
 
   <script>
      let chatGPT = document.getElementById('chatGPT');
