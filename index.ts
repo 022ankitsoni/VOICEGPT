@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
     });
 });
 
-app.use(express.static('public/assets'));
+app.use(express.static('assets'));
 app.use(express.static('uploads'));
 
 app.get('/', (req, res) => {
