@@ -58,7 +58,7 @@ function record() {
       .catch((err) => {
         alert(`The following error occurred: ${err}`);
         // change image in button
-        recordButtonImage.src = '/images/microphone.png';
+        recordButtonImage.src = '../assets/images/microphone.png';
       });
   } else {
     // stop recording
@@ -101,13 +101,13 @@ function playRecording(e) {
 
     if (audio.paused) {     
       audio.play();
-      button.firstElementChild.src = 'images/pause.png';
+      button.firstElementChild.src = '../assetsimages/pause.png';
     } else {
      
       audio.pause();
       text.innerHTML = ""
       response.innerText = ""
-      button.firstElementChild.src = 'images/play.png';
+      button.firstElementChild.src = '../assetsimages/play.png';
     }
   }
 }
@@ -118,7 +118,7 @@ function createRecordingElement(file) {
   const audio = document.createElement('audio');
   audio.src = file;
   audio.onended = (e) => {
-    e.target.nextElementSibling.firstElementChild.src = 'images/play.png';
+    e.target.nextElementSibling.firstElementChild.src = '../assetsimages/play.png';
   };
   recordingElement.appendChild(audio);
   const playButton = document.createElement('button');
