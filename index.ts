@@ -1,3 +1,4 @@
+
 const { OpenAIApi, Configuration } = require("openai");
 import * as path from 'path';
 import * as fs from 'fs';
@@ -8,7 +9,7 @@ import { OpenAI } from "langchain/llms/openai";
 
 const openai = new OpenAIApi(new Configuration({ 
   apiKey: process.env.secrets.OPENAI_API_KEY,
- }))
+ }));
 
  let tokens = ""
 
