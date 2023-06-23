@@ -72,7 +72,7 @@ app.use(express.static('public/assets'));
 app.use(express.static('uploads'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/record', upload.single('audio'), async (req, res) => {
